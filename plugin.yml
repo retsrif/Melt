@@ -1,0 +1,9 @@
+name: Melt
+main: retsrif.Melt.Melt
+version: 1.0
+author: retsrif
+description: Melt ice in a radius.
+commands:
+  melt:
+    description: Allows you to melt ice in a specific radius.
+    usage: |
