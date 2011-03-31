@@ -39,7 +39,12 @@ public class Melt extends JavaPlugin {
 		}
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(f));
-			limit = Integer.parseInt(in.readLine());
+			try { limit = Integer.parseInt(in.readLine()); }
+			catch (NumberFormatException nfe) {
+				nfe.printStackTrace();
+				System.out.println("[Melt] Hint: seems like your limit.txt is not a number");
+				return;
+			}
 			System.out.println("[Melt] Radius limit set to "+limit);
 		} catch (Exception e) {
 			System.out.println("[Melt] Could not read limit.txt - radius limit defaulted to 30");
