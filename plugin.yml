@@ -1,6 +1,6 @@
 name: Melt
 main: retsrif.Melt.Melt
-version: 1.0
+version: 1.1
 author: retsrif
 description: Melt ice in a radius.
 commands:
